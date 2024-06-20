@@ -1,0 +1,49 @@
+@import '../../index.scss';
+
+
+.imageDisplay{
+    background-image: url(../../images/game.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.commonTopMargin{
+    margin-top: 15px !important;
+}
+
+.bgForm{
+    background-color: $bgForm !important;
+}
+
+input {
+    @extend .commonTopMargin;
+    border:1px solid $bgColor !important;
+    
+}
+.customInput{
+    background-color:#fff !important ;
+    color: #000 !important;
+
+}
+a{
+    color: gray !important;
+}
+
+.btnControl{
+    &:hover{
+        background-color: $inputBgColor
+    }
+    @extend .commonTopMargin;
+    border:1px solid $inputBgColor !important;
+    transition: 0.5s background-color;
+}
+.gotoReg{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:992px) {
+    .imageDisplay{
+        display: none;
+    }
+    
+}

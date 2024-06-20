@@ -1,0 +1,30 @@
+.header{
+    background-image:linear-gradient(rgba(39,43,48, 0.9),rgba(39,43,48, 0.9)), url(../../images/wallpaper.jfif);
+    background-position: center;
+    background-size: cover;
+    h2{
+        color: rgb(197, 186, 186);
+    }
+   
+    .browsBtn{
+        color: rgb(197, 186, 186);
+        background-color: transparent;
+        border: 2px solid  rgb(197, 186, 186) !important    ;
+        &:hover{
+            color: #fff;
+            background-color: rgb(73, 70, 70);
+        }
+    }
+
+}
+
+    .cardGame{
+        &:hover{
+            transform: scale(1.1);
+        }
+        background-color: rgb(50,56,62) !important;
+        cursor: pointer;
+        transition: 0.5s all;
+    
+    }
+

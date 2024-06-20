@@ -1,0 +1,46 @@
+@import '../../index.scss';
+
+$inputBgColor:rgb(28,30,34);
+
+.imageDisplay{
+    background-image: url(../../images/game.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.commonTopMargin{
+    margin-top: 15px !important;
+}
+
+input {
+    @extend .commonTopMargin;
+    border:1px solid $bgColor !important;
+    background-color:$inputBgColor !important ;
+    color: gray !important;
+}
+a{
+    color: gray !important;
+}
+.bgForm{
+    background-color: $bgForm !important;
+}
+
+.btnControl{
+    &:hover{
+        background-color: $inputBgColor
+    }
+    @extend .commonTopMargin;
+    border:1px solid $inputBgColor !important;
+    transition: 0.5s background-color;
+}
+
+.gotoLogin{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:992px) {
+    .imageDisplay{
+        display: none;
+    }
+    
+}
